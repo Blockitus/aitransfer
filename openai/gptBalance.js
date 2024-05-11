@@ -16,11 +16,11 @@ async function getBalance(account) {
 }
 
 getBalance(myaccount).then(console.log);
-
+_contender = ["How much money do I have left in my account?", "necesito saber cuanto dinero tengo en mi cuenta"]
 async function runConversation() {
   // Step 1: send the conversation and available functions to the model
   const messages = [
-    { role: "user", content: "How much money do I have left in my account?" },
+    { role: "user", content: _contender[1] },
   ];
   const tools = [
     {
