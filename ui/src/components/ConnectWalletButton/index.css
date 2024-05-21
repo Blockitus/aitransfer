@@ -1,0 +1,24 @@
+/* index.css */
+
+/* Ensure the body takes the full height of the viewport */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the input group */
+.input-group {
+    width: 100%;
+    max-width: 400px; /* Optional: Limit the max width of the input group */
+}
+
+.form-control {
+    border-radius: 0.25rem; /* Optional: Add some border radius */
+}
+
+.btn {
+    border-radius: 0.25rem; /* Optional: Add some border radius */
+}

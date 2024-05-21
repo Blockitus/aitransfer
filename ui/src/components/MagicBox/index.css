@@ -1,0 +1,15 @@
+/* Ensure the body takes the full height of the viewport */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style for the input group */
+.input-group {
+    max-width: 800px; /* Increase the max width for the input group */
+}
+

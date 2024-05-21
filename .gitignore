@@ -1,0 +1,2 @@
+# Ignore .env file in chainnlink_hackathon2024/openai directory
+.env

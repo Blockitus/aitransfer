@@ -1,0 +1,45 @@
+/* App.css */
+
+/* Center the root container and set a maximum width */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Style for cards */
+.card {
+  padding: 2em;
+}
+
+/* Style for read-the-docs section */
+.read-the-docs {
+  color: #888;
+}
+
+/* Ensure the body takes the full height of the viewport */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+/* Style for the input group */
+.input-group {
+  width: 100%;
+  max-width: 600px; /* Adjust the max width for the input group */
+  margin: 0 auto; /* Center the input group within its container */
+}
+
+/* Ensure the form control and button take up the full width within the input group */
+.input-group .form-control {
+  flex: 1; /* Allow the input to take up the remaining space */
+}
+
+.input-group .btn {
+  flex: 0 0 auto; /* Keep the button's default width */
+}
