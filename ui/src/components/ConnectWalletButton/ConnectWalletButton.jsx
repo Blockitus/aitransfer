@@ -15,9 +15,9 @@ export default function Connect ({address, buttonState, askToConnect}) {
             <input 
             type="text" 
             class="form-control" 
-            placeholder={address} 
+            value={address} 
             aria-describedby="button-addon1"
-            disabled/>
+            readOnly/>
         </div>
     )
 }
