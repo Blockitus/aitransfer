@@ -2,6 +2,7 @@ import { useState } from 'react'
 import MagicBox from './components/MagicBox/MagicBox';
 import Connect from './components/ConnectWalletButton/ConnectWalletButton';
 import TextArea from './components/TextArea/textArea';
+import Title from './components/DappTitle/Title';
 
 import injectProvider from './assets/InjectProvider';
 import runConversation from './assets/runConversation';
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <>
+    <Title/>
     <Connect address={address} buttonState={buttonState} askToConnect={askToConnect}/>
     <MagicBox prompt={prompt} setPrompt={setPrompt} handleClick={handleClick}/>
     <TextArea message={response}/>
