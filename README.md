@@ -133,8 +133,36 @@ Detailed description of the system architecture, including how blockchain, NER, 
 
 ### Roadmap
 
-- **Q1 2024: Market Research and Analytics**
-  - Conduct thorough market research to understand current trends, user needs, and industry gaps. Analyze competitive products and identify opportunities for differentiation. Establish strategic partnerships and gather user feedback to inform the development process.
+**Phase 1: Initial Development & NLP Integration for Processing Data Related to Account Balances (Q1)**
+
+**Core Features:**
+- Develop features for the native coin.
+- Implement an import token feature for the wallet.
+- Implement functionality to retrieve the account balance when the message prompt has a direct intention to retrieve it.
+- Implement functionality to get the account balance when the message prompt inquires about its value to process data. For example: "How much money do I need to buy a car priced at 10,000 USDC?" (It is necessary to retrieve the balance to determine if it is sufficient to buy the car and compute how many USDC are needed if the balance is not enough).
+
+**NLP Engine Development:**
+- Develop and train an NLP model to understand and process commands such as "What is my balance?" and "Can I spend 10 USDC from my account?"
+- Implement a system to handle both direct and indirect questions, extracting relevant data from user prompts.
+
+**Balance and Data Retrieval Implementation:**
+- Develop functionality to connect to Avalanche in this initial approach.
+- Implement the use of ethers.js functions to retrieve balances of supported ERC20 tokens based on NLP commands.
+- Include features to interpret user queries about spending capacity and available funds.
+
+**Data Processing and Response:**
+- Ensure the NLP engine can handle various phrasings and questions related to account balance status.
+
+**User Interface Design:**
+- Design a user-friendly interface for inputting and displaying NLP commands and blockchain data.
+- Incorporate intuitive design principles for ease of use, ensuring clear communication of command options and responses.
+
+**Internal Testing:**
+- Use TDD (Test-Driven Development) to conduct thorough testing of NLP and data retrieval features.
+
+--- 
+
+Let me know if there's anything else you need!
 
 - **Q2 2024: Build MVP**
   - Develop the Minimum Viable Product (MVP) of the AiTransfer Protocol. Focus on core features, including AI and blockchain integration. Ensure the MVP is user-friendly, secure, and efficient. Begin initial internal testing to identify and resolve any major issues.
