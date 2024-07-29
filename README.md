@@ -133,13 +133,16 @@ Detailed description of the system architecture, including how blockchain, NER, 
 
 ### Roadmap
 
-**Phase 1: Initial Development & NLP Integration for Processing Data Related to Account Balances (Q1)**
+**Phase 1: Initial Development & NLP Integration for Processing Data Related to Account Balances**
+Develop the wallet's capabilities to understand direct and indirect requests related to account balances.
 
-**Core Features:**
-- Develop features for the native coin.
-- Implement an import token feature for the wallet.
-- Implement functionality to retrieve the account balance when the message prompt has a direct intention to retrieve it.
-- Implement functionality to get the account balance when the message prompt inquires about its value to process data. For example: "How much money do I need to buy a car priced at 10,000 USDC?" (It is necessary to retrieve the balance to determine if it is sufficient to buy the car and compute how many USDC are needed if the balance is not enough).
+**Review and Research Core Functions:**
+- Import Token (NOT BY NLP)
+- Import User Contact (NOT BY NLP)
+- Direct Request: Retrieve account balance from the message prompt, such as: "What is my account balance?"
+- Indirect Request: Process account balance when the message prompt inquires about its value.
+- Extract transaction commands from a message prompt, such as: "Send 10 USDC to Eliza," and format the transaction object.
+- Request confirmation of the transaction object before calling the function in the smart contract core.
 
 **NLP Engine Development:**
 - Develop and train an NLP model to understand and process commands such as "What is my balance?" and "Can I spend 10 USDC from my account?"
