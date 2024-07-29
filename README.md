@@ -136,7 +136,7 @@ Detailed description of the system architecture, including how blockchain, NER, 
 **Phase 1: Initial Development & NLP Integration for Processing Data Related to Account Balances**
 Develop the wallet's capabilities to understand direct and indirect requests related to account balances.
 
-**Review and Research Core Functions:**
+**Review the Core Functions:**
 - Import Token (NOT BY NLP)
 - Import User Contact (NOT BY NLP)
 - Direct Request: Retrieve account balance from the message prompt, such as: "What is my account balance?"
